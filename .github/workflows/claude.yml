@@ -52,9 +52,8 @@ jobs:
             to launch a browser and interact with the app.
 
           mcp_config: |
-          {
-            "mcpServers": [
-              {
+            {
+              "mcpServers": {
                 "playwright": {
                   "command": "npx",
                   "args": [
@@ -64,8 +63,7 @@ jobs:
                   ]
                 }
               }
-            ]
-          }
+            }
         allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click,..."
 
           # Optional: Give a custom prompt to Claude. If this is not specified, Claude will perform the instructions specified in the comment that tagged it.
